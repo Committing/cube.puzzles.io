@@ -1,0 +1,279 @@
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ *     ON Glitch.com edit screen: 
+ * 
+ *     - Click "PREVIEW" on the bottom-right and click "Open preview pane"
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+body {
+    margin: 0;
+    background-color: black;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+
+#cube {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.frame_data {
+    /*background-color: grey;*/
+    position: fixed;
+    bottom: 0;
+    right: 300px;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.frame_data div {
+    width: 250px;
+    text-align: right;
+}
+
+.frame_loader img {
+    height: auto;
+    width: 30px;
+    margin-bottom: 15px;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.show_loader img {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ui {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    user-select: none;
+}
+
+.ui button {
+    display: inline-block;
+    /*float: right;*/
+    cursor: pointer;
+    border: none;
+    padding: 3px 7px;
+    font-size: 14px;
+    background-color: #161616;
+    color: #b5b5b5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 3px;
+    white-space: nowrap;
+}
+
+.ui button.toggle_edges,
+.ui button.toggle_edge_opacity {
+    position: relative;
+}
+
+.ui button.toggle_edges::before,
+.ui button.toggle_edge_opacity::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: 6px;
+    padding: 2px;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+    background-size: 300% 300%;
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+}
+
+.ui button.toggle_edges:hover::before,
+.ui button.toggle_edge_opacity:hover::before {
+    animation: rainbow 3s linear infinite;
+}
+
+.toggle_edge_opacity {
+    opacity: 0.5;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+
+.ui button.selected {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.tiny_title {
+    font-size: 14px;
+    color: white;
+}
+
+
+.noclick {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.focus_center {
+    background-image: url(/images/grid.png);
+    color: black !important;
+    font-weight: bold;
+    background-position: 10px;
+    /*background-size: cover;*/
+}
+
+
+.gradient_lines {
+    background: linear-gradient(to right, red, orange, #ff0, green, #53f4ff, #d8a2ff, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sphere_size_section button {
+    border-radius: 100%;
+}
+
+
+.edit_code a {
+    color: white;
+    background-color: green;
+    color: white;
+}
+
+
+.edit_code a {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.edit_code a:hover {
+  background-color: #2b2b40;
+  transform: scale(1.02);
+}
+
+.edit_code a:active {
+  background-color: #151526;
+  transform: scale(0.98);
+}
+
+.info {
+    font-size: 15px;
+    color: grey;
+    margin-top: 30px;
+}
+
+.madeby {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    color: grey;
+    font-size: 14px;
+}
+
+.madeby a {
+    color: grey;
+    text-decoration: none;
+}
+
+.madeby a:hover {
+    color: white;
+}
+
+.ui button.mobile_menu_btn {
+    display: none;
+}
+
+@media (max-width: 700px) {
+
+    .hidemobile {
+        display: none;
+    }
+
+    .ui {
+        height: auto;
+    }
+
+    .ui .hide_menu {
+        display: none;
+    }
+
+    .ui button.mobile_menu_btn {
+        display: inline-block;
+    }
+
+    .info {
+        padding-left:  15px;
+    }
+
+}
+
+
+.ui.show_mobile_menu .hide_menu {
+    display: block;
+}
+
+.ui.show_mobile_menu {
+    background-color: black;
+    padding: 15px;
+}
+
+.ui button.mobile_menu_btn {
+    background-color: #3a1694;
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 16px;
+}
