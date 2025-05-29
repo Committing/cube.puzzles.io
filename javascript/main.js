@@ -110,7 +110,7 @@ function loadNextFrame(autoplay = false, reset_data = false, onload_function = f
 
             // stop from playing every x frames
             if (data.frame_count % frame_limit === 0) {
-                // stopAutoLoadNextFrame();
+                stopAutoLoadNextFrame();
             }
 
 
@@ -174,7 +174,7 @@ function loadNextFrame(autoplay = false, reset_data = false, onload_function = f
             if (autoplay === true && autoload === true) {
 
                 setTimeout(function() {
-                    loadNextFrame(true);
+                    // loadNextFrame(true);
                 }, ajax_delay);
 
             } else {
@@ -220,7 +220,7 @@ function hard_reset() {
     stopAutoLoadNextFrame();
     setTimeout(function() {
         loadNextFrame(false, true);
-    }, ajax_delay + 1000);
+    }, ajax_delay + 100);
 }
 
 function setDelay(delay = 1000) {
