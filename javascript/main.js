@@ -336,6 +336,8 @@ $(function() {
 
     if ( getParameterByName('autoplay') ) {
         autoLoadNextFrame();
+
+        $('.clicknext_text').html('Click _reset_ to start from the beginning<br /><br />');
     }
 
 

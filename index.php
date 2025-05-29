@@ -115,7 +115,7 @@
             <br />
 
             <div class="info noprocess hidemobile">
-                Click Next or Play to see process.<br /><br />
+                <i class="clicknext_text">Click Next or Play to see process.<br /><br /></i>
                 <i class="autostops_text">Auto-stops every <span class="frame_stop_number">50</span> frames to save resources<br /><br /></i>
                 right click = pan<br />
                 left click = rotate<br />
