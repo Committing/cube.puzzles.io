@@ -330,5 +330,9 @@ $(function() {
         $('.frame_stop_number').html(frame_limit);
     }
 
+    if ( getParameterByName('autoplay') ) {
+        autoLoadNextFrame();
+    }
+
 
 });
