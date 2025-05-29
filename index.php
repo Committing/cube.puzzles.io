@@ -116,7 +116,7 @@
 
             <div class="info noprocess hidemobile">
                 Click Next or Play to see process.<br /><br />
-                Auto-stops every <span class="frame_stop_number">50</span> frames to save resources<br /><br />
+                <i class="autostops_text">Auto-stops every <span class="frame_stop_number">50</span> frames to save resources<br /><br /></i>
                 right click = pan<br />
                 left click = rotate<br />
                 scroll = zoom

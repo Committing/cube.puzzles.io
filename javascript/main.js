@@ -328,6 +328,10 @@ $(function() {
     if ( getParameterByName('limit') ) {
         frame_limit = parseInt(getParameterByName('limit'));
         $('.frame_stop_number').html(frame_limit);
+
+        if (frame_limit == 0) {
+            $('.autostops_text').hide();
+        }
     }
 
     if ( getParameterByName('autoplay') ) {
