@@ -220,7 +220,7 @@ function hard_reset() {
     stopAutoLoadNextFrame();
     setTimeout(function() {
         loadNextFrame(false, true);
-    }, ajax_delay + 100);
+    }, ajax_delay + 1000);
 }
 
 function setDelay(delay = 1000) {
