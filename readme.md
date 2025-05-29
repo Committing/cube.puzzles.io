@@ -7,8 +7,6 @@ Change the code however you like.
 
 ⚠️ Looking at values/colors beneath the code is forbidden. (It won't help you solve it)
 
-🔴 clue: interracting with red color shows "AI" as text (Red is out of control. ignore it)
-
 ## installation
 
 [Download Laragon](https://laragon.org/download/) and put the github files into the `www` directory.
