@@ -69,13 +69,13 @@
 
                 <div class="button_selection noprocess">
                     <br /><span class="tiny_title">Delay between frames (play)</span><br />
-                    <button onclick="setDelay(0);">0s</button>
+                    <button class="only_simple" onclick="setDelay(0);">0s</button>
                     <button onclick="setDelay(100);">0.1s</button>
                     <button class="selected" onclick="setDelay(300);">0.3s</button>
                     <button onclick="setDelay(500);">0.5s</button>
                     <button onclick="setDelay(1000);">1s</button>
                     <button onclick="setDelay(3000);">3s</button>
-                    <button class="only_simple" onclick="setDelay(10000);">10s</button>
+                    <button onclick="setDelay(10000);">10s</button>
                 </div>
     <!-- 
                 <hr />
