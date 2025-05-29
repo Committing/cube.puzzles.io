@@ -219,7 +219,6 @@ function hard_reset() {
 
     stopAutoLoadNextFrame()
     setTimeout(function() {
-        stopAutoLoadNextFrame()
         loadNextFrame(false, true);
     }, 100);
 }
