@@ -33,7 +33,7 @@
         <div class="frame_data">
             <div class="frame_loader"><img src="/images/loader_circle.svg" alt="" /></div>
             <div class="frame_count">0</div>
-            <div class="edit_code"><a target="_blank" href="https://github.com/Committing/cube.puzzles.io">✏️ edit code</a></div>
+            <div class="edit_code"><a target="_blank" href="https://github.com/Committing/cube.puzzles.io">✏️ see code</a></div>
         </div>
 
         <div class="ui">
