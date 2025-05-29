@@ -64,6 +64,7 @@ function loadNextFrame(autoplay = false, reset_data = false, onload_function = f
     send_data['loop_data'] = loop_data;
     send_data['interaction_colors'] = next_interaction_colors;
 
+    // reset data
     next_interaction_colors = [];
 
     $.ajax({
@@ -174,7 +175,7 @@ function loadNextFrame(autoplay = false, reset_data = false, onload_function = f
             if (autoplay === true && autoload === true) {
 
                 setTimeout(function() {
-                    // loadNextFrame(true);
+                    loadNextFrame(true);
                 }, ajax_delay);
 
             } else {
