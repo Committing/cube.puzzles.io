@@ -5,7 +5,9 @@ Change the code however you like.
 
 `loop.php` is the starting file.
 
-- Looking at values beneath the code is forbidden. (It won't help you solve it)
+⚠️ Looking at values/colors beneath the code is forbidden. (It won't help you solve it)
+
+🔴 clue: interracting with red color shows "AI" as text (Red is out of control. Ignore it.)
 
 ## installation
 
