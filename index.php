@@ -75,7 +75,7 @@
                     <button onclick="setDelay(500);">0.5s</button>
                     <button onclick="setDelay(1000);">1s</button>
                     <button onclick="setDelay(3000);">3s</button>
-                    <button onclick="setDelay(10000);">10s</button>
+                    <button class="only_simple" onclick="setDelay(10000);">10s</button>
                 </div>
     <!-- 
                 <hr />
@@ -87,16 +87,15 @@
                 <button class="toggle_edges" onclick="toggleWireFrame();">toggle_edges</button>
                 <button class="toggle_edges toggle_edge_opacity" onclick="toggleWireframeOpacity();">toggle_edge_opacity</button>
                 
-                <button onclick="toggleClamp();">clamp_to_255_max</button>
+                <button class="only_simple" onclick="toggleClamp();">clamp_to_255_max</button>
                 <button class="gradient_lines" onclick="toggleGradientLines();">toggle_gradient_lines</button>
 
-
-                <button onclick="toggleRotationLimits();">toggleRotationLimits</button>
+                <button class="only_simple" onclick="toggleRotationLimits();">toggleRotationLimits</button>
                 <button onclick="startRotating();">start_rotating</button>
                 <button onclick="stopRotating();">stop_rotating</button>
 
-                <button onclick="rotateCameraCounterClockwise();">roll_camera_left = [</button>
-                <button onclick="rotateCameraClockwise();">roll_camera_right = ]</button>
+                <button class="only_simple" onclick="rotateCameraCounterClockwise();">roll_camera_left = [</button>
+                <button class="only_simple" onclick="rotateCameraClockwise();">roll_camera_right = ]</button>
 
                 <button onclick="togglePerspective();">switch_perspective = p</button>
                 <button onclick="detatchCamera();">fly_around</button>

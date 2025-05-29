@@ -346,6 +346,11 @@ $(function() {
     }
 
 
+    if ( getParameterByName('simple') ) {
+        $('.only_simple').hide();
+    }
+
+
 
     $('.add_color').click(function() {
         $('.available_colors').append('<div class="available_color" data-color="' + $('[type="color"]').val() + '" style="background-color: ' + $('[type="color"]').val() + ';"></div>');
