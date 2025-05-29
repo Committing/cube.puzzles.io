@@ -65,7 +65,22 @@ class vectors extends box
 
     }
 
+    public function mixInteractions($color)
+    {
+        if (isset($_POST['interaction_colors']) && ! empty($_POST['interaction_colors'])) {
 
+            foreach ($_POST['interaction_colors'] as $var) {
+
+                # better to mix interactions?
+                // $color = $this->mix($color, hexToRgb($var));
+                $color = hexToRgb($var);
+
+            }
+
+        }
+
+        return $color;
+    }
 
     public function process_starting_line()
     {
@@ -92,6 +107,8 @@ class vectors extends box
             $c2 = $this->previous_loop['s2'];
             $s1 = $this->previous_loop['c1'];
             $s2 = $this->previous_loop['c2'];
+
+            $c1 = $this->mixInteractions($c1);
         } else {
             $c1 = $this->loop['c1'];
             $c2 = $this->loop['c2'];

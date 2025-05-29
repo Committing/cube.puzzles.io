@@ -531,6 +531,8 @@ class box_positions
         
     }
 
+    
+
     public function mInteraction($color, $line_color = '#ffff00')
     {
         $this->projections = [];

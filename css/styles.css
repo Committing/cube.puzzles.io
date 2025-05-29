@@ -1,24 +1,4 @@
 
-/**
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- *     ON Glitch.com edit screen: 
- * 
- *     - Click "PREVIEW" on the bottom-right and click "Open preview pane"
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- */
 
 body {
     margin: 0;
@@ -276,4 +256,19 @@ body {
     margin-top: 10px;
     margin-left: 15px;
     margin-bottom: 16px;
+}
+
+
+.available_color {
+    height: 30px;
+    width: 30px;
+    border: 1px solid grey;
+    cursor: pointer;
+    float: left;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+[type="color"] {
+    cursor: pointer;
 }

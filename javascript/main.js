@@ -30,6 +30,8 @@ var center_focus = [127.5, 127.5, 127.5];
 
 var frame_limit = 50;
 
+var next_interaction_colors = [];
+
 
 function frame1Settings(class_settings) {
 
@@ -60,6 +62,9 @@ function loadNextFrame(autoplay = false, reset_data = false, onload_function = f
     send_data['reset_data'] = reset_data;
     send_data['setup'] = getParameterByName('setup');
     send_data['loop_data'] = loop_data;
+    send_data['interaction_colors'] = next_interaction_colors;
+
+    next_interaction_colors = [];
 
     $.ajax({
         type: 'POST',
@@ -339,6 +344,17 @@ $(function() {
 
         $('.clicknext_text').html('Click _reset_ to start from the beginning<br /><br />');
     }
+
+
+
+    $('.add_color').click(function() {
+        $('.available_colors').append('<div class="available_color" data-color="' + $('[type="color"]').val() + '" style="background-color: ' + $('[type="color"]').val() + ';"></div>');
+    });
+
+
+    $(document).on('click', '.available_color', function() {
+        next_interaction_colors.push( $(this).attr('data-color') );
+    });
 
 
 });

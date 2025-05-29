@@ -6,19 +6,20 @@
     <link rel="stylesheet" href="/css/styles.css?v=<?=time();?>?" />
 
     <meta id="vp" name="viewport" content="width=device-width, initial-scale=1">
-        <script>
-            window.onload = function() {
-                if (screen.width < 500) {
-                    var mvp = document.getElementById('vp');
-                    mvp.setAttribute('content', 'user-scalable=yes,width=500');
-                }
-            }
+    <script>
+        window.onload = function() {
             if (screen.width < 500) {
                 var mvp = document.getElementById('vp');
                 mvp.setAttribute('content', 'user-scalable=yes,width=500');
             }
-        </script>
+        }
+        if (screen.width < 500) {
+            var mvp = document.getElementById('vp');
+            mvp.setAttribute('content', 'user-scalable=yes,width=500');
+        }
+    </script>
 
+    <meta name="darkreader-lock">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -110,6 +111,17 @@
                 <button onclick="autoLoadNextFrame();" class="hide_nexting">play</button>
                 <button onclick="stopAutoLoadNextFrame();">stop</button>
                 <button style="background-color: red;color: white;" onclick="hard_reset();">_reset_</button>
+            </div>
+
+            <br />
+
+            <div class="interactions">                
+                <br /><br /><span class="tiny_title">Click color below to interact:</span><br />
+                <div class="available_colors">
+                    <div class="available_color" data-color="#000000" style="background-color: black;"></div>
+                    <div class="available_color" data-color="#ffffff" style="background-color: white;"></div>
+                </div><br /><br />
+                <input type="color" value="#808080" /><button class="add_color">Add Color</button>
             </div>
 
             <br />

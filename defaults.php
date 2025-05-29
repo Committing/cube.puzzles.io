@@ -18,6 +18,7 @@ define('t', true);
 switch ($_SERVER['HTTP_HOST']) {
 
     case 'hi-sandbox.com.test':
+    case 'cube.puzzles.io.test':
         define('LOCAL', true);
         break;
 
