@@ -4,8 +4,11 @@
  * [interactor.class.php]
  *     - is for switching between multiple settings and processes
  *     - 'thinking_face' is the example given on snoozing.com / cube.puzzles.io
- *     - use_vectors = the colours to be used
- *     - use_process = the function name which processes the colours
+ *         - $this->use_vectors = the colours to be used
+ *         - $this->use_process = the function name which processes the colours
+ *
+ *
+ *    Change the code however you like.
 */
 
 require_once('defaults.php');
