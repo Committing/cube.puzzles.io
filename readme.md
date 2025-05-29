@@ -1,8 +1,18 @@
-A website with no dependencies
+# Trapped in a box
+## [https://snoozing.com](https://snoozing.com)
 
-just [download Laragon](https://laragon.org/download/) and put the github files into the `www` directory.
+Change the code however you like.
 
-go to `https://localhost/`
+`Loop.php` is the starting file.
+
+- Looking at values beneath the code is forbidden. (It won't help you solve it)
+
+## installation
+
+[Download Laragon](https://laragon.org/download/) and put the github files into the `www` directory.
+
+Then go to: `https://localhost/`
+
 
 ---
 
