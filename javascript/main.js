@@ -171,7 +171,7 @@ function loadNextFrame(autoplay = false, reset_data = false, onload_function = f
             }
 
 
-            if (autoplay === true && autoload === true) {
+            if (autoplay === true && autoload === true && reset_data != true) {
 
                 setTimeout(function() {
                     loadNextFrame(true);
