@@ -6,4 +6,4 @@ go to `https://localhost/`
 
 ---
 
-( Older version of laragon devoid of licence keys: https://github.com/leokhoa/laragon/releases/tag/5.0.0 )
+(Older version of laragon devoid of licence keys: https://github.com/leokhoa/laragon/releases/tag/5.0.0)
