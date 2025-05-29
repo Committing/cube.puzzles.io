@@ -219,9 +219,11 @@ function hard_reset() {
     loop_data = [];
 
     stopAutoLoadNextFrame();
+
     setTimeout(function() {
         loadNextFrame(false, true);
-    }, ajax_delay + 100);
+    }, 0);
+
 }
 
 function setDelay(delay = 1000) {
