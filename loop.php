@@ -3,7 +3,7 @@
 /*
  * [interactor.class.php]
  *     - is for switching between multiple settings and processes
- *     - 'thinking_face' is the example given on snoozing.com / cube.puzzles.io
+ *     - 'thinking_face' is the one given on snoozing.com / cube.puzzles.io. The cube is bigger than one example.
  *         - $this->use_vectors = the colours to be used
  *         - $this->use_process = the function name which processes the colours
  *
