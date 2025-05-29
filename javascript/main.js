@@ -110,7 +110,7 @@ function loadNextFrame(autoplay = false, reset_data = false, onload_function = f
 
             // stop from playing every x frames
             if (data.frame_count % frame_limit === 0) {
-                stopAutoLoadNextFrame();
+                // stopAutoLoadNextFrame();
             }
 
 
@@ -171,7 +171,7 @@ function loadNextFrame(autoplay = false, reset_data = false, onload_function = f
             }
 
 
-            if (autoplay === true && autoload === true && reset_data != true) {
+            if (autoplay === true && autoload === true) {
 
                 setTimeout(function() {
                     loadNextFrame(true);
