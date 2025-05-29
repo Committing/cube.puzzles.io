@@ -217,10 +217,10 @@ function hard_reset() {
 
     loop_data = [];
 
-    stopAutoLoadNextFrame()
+    stopAutoLoadNextFrame();
     setTimeout(function() {
         loadNextFrame(false, true);
-    }, 100);
+    }, ajax_delay + 100);
 }
 
 function setDelay(delay = 1000) {
