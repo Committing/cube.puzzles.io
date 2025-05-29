@@ -1,6 +1,17 @@
 
 
-
+/*
+ * 
+ * 
+ * - You can use getAbsoluteCameraPosition() which will return the function you can run to always return to that same position.
+ * 
+ * - the code in box.js has full support for multiple cubes.
+ *     - addBigCube(cubeName, x, y, z)
+ *     - moveCube(cubeName, x, y, z)
+ *     - rotateBigCube(cubeName, rotation) e.g: rotateBigCube(cubeName, { y: (-90 * Math.PI) / 180 });
+ * 
+ * 
+*/
 
 
 

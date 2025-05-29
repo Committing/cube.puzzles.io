@@ -27,7 +27,7 @@ Available cube commands:
 - moveCube(cubeName, x, y, z)
 - moveToCameraPosition(state)
 - releaseCamera()
-- rotateBigCube(cubeName, rotation)
+- rotateBigCube(cubeName, rotation)  e.g: rotateBigCube(cubeName, { y: (-90 * Math.PI) / 180 });
 - rotateCameraClockwise(speed = 0.05)
 - rotateCameraCounterClockwise(speed = 0.05)
 - setCubeRotation(cubeName, newRotation)
