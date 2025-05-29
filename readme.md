@@ -3,7 +3,7 @@
 
 Change the code however you like.
 
-`Loop.php` is the starting file.
+`loop.php` is the starting file.
 
 - Looking at values beneath the code is forbidden. (It won't help you solve it)
 
