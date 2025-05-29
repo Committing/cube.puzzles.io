@@ -116,7 +116,7 @@
             <br />
 
             <div class="interactions">                
-                <br /><br /><span class="tiny_title">Click color below to interact:</span><br />
+                <span class="tiny_title">Click color below to interact:</span><br />
                 <div class="available_colors">
                     <div class="available_color" data-color="#000000" style="background-color: black;"></div>
                     <div class="available_color" data-color="#ffffff" style="background-color: white;"></div>
